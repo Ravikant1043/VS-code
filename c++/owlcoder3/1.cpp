@@ -206,7 +206,18 @@ int main() {
 	// while(nunnu--){
 	//     hello();
 	// }
-    string ans="ravi";
-    cout<<ans.substr(4)+ans;
+    // string ans="ravi";
+    // cout<<ans.substr(4)+ans;
+    unordered_set<int>s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    unordered_map<int,int>m;
+    m[1]=1;
+    m[2]=2;
+    m[3]=3;
+    cout<<next(m.begin(),1)->first;
+    // for(auto it=s.begin();it!=s.end();it++)cout<<*it;
 	return 0;
 }
