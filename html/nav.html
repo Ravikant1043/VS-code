@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION BAR FORMATION </title>
+    <center><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKP9qc-iNqeuvP6wYTsYpXL2fbrehaIxBQw&usqp=CAU"
+            alt=""></center>
+
+    <style>
+        body {
+            background-color: orange;
+            /* background-image:url'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKP9qc-iNqeuvP6wYTsYpXL2fbrehaIxBQw&usqp=CAU'; */
+            /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKP9qc-iNqeuvP6wYTsYpXL2fbrehaIxBQw&usqp=CAU");
+            background-repeat: no-repeat;
+            background-position: center center; */
+        }
+
+        #nav {
+            /* display: inline; */
+            padding: 10px;
+            border: 10px;
+            border-radius: 5px;
+            margin: auto;
+            height: fit-content;
+            width: auto;
+            background-color: orangered;
+
+        }
+
+        .SURAJ {
+            display: inline;
+            color: black;
+            font-style: italic;
+            font-weight: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: fit-content;
+            background-color: lightcoral;
+
+        }
+
+        div {
+            line-height: 30px;
+        }
+
+        input {
+            color: red;
+        }
+
+        .submit,
+        .reset {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="nav">
+        <li class="SURAJ"><a href="https://aec.edu.in/" target="_blank">HOME</a></li>&nbsp;
+        <li class="SURAJ"><a href="https://examsection.aec.edu.in/" target="_blank">EXAM PORTAL</a></li>&nbsp;
+        <li class="SURAJ"> <a href="https://info.aec.edu.in/AEC/StudentMaster.aspx" target="_blank">LOGIN</a></li>&nbsp;
+        <li class="SURAJ"><a href="https://aec.edu.in/?p=IT_Infrastructure" target="_blank">COLLEGE TOUR</a></li>
+    </ul>
+    <form action="">
+        <fieldset>
+            <legend>
+                <h1>LOGIN DETAILS</h1>
+            </legend>
+            UserId: <input type="text" placeholder="Roll No" id="" required>
+            Password: <input type="password" name="" placeholder="Password" required>
+        </fieldset>
+    </form>
+    <!-- <div> &nbsp; </div>
+        <div> &nbsp; </div>
+        <div> &nbsp; </div> 
+        <div> &nbsp; </div>
+        <div> &nbsp; </div> -->
+    <form action="">
+        <fieldset>
+            <legend>
+                <h1>REGISTRATION FORM</h1>
+            </legend>
+            <div>Name: <input type="text" name="" id="name" class="name" placeholder="First Name" required>
+                <input type="text" name="" id="name" class="name" placeholder="Middle Name">
+                <input type="text" name="" id="name" class="name" placeholder="Last Name" required>
+            </div>
+            </div>
+            <div>Father's Name: <input type="text" name="" id="name" class="name" placeholder="First Name" required>
+                <input type="text" name="" id="name" class="name" placeholder="Middle Nme">
+                <input type="text" name="" id="name" class="name" placeholder="Last Name" required>
+            </div>
+            <div>Mother's Name: <input type="text" name="" id="name" class="name" placeholder="First Name" required>
+                <input type="text" name="" id="name" class="name" placeholder="Middle Nme">
+                <input type="text" name="" id="name" class="name" placeholder="Last Name" required>
+            </div>
+            <div>Father Occupation: <input type="text" class="occupation" placeholder="required" required>
+                Mother Occupation: <input type="text" class="occuption" placeholder="required" required></div>
+            <div>Date Of Birth <input type="date" name="" id="dob" class="dob">
+                &nbsp;&nbsp;&nbsp;
+                Gender: <input type="radio" name="GENDER" id="">Male
+                <input type="radio" name="GENDER" id="">Female
+                <input type="radio" name="GENDER" id="">Others
+                <div>Mail:<input type="email" name="" id="" required placeholder="Email" required> &nbsp;&nbsp; Phone No: <select
+                        name="" id="">
+                        <option value="">+91</option>
+                        <option value="">+1</option>
+                    </select><input type="number" name="" id="" class="num" placeholder="Mobile No" required></div>
+                <input type="submit" class="submit" value="Submit">
+                <input type="reset" class="reset" name="Reset" placeholder="password" id="">
+        </fieldset>
+
+</body>
+
+</html>

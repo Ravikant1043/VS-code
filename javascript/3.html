@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            mai teri 
+        </title>
+    </head>
+    <body>
+        <!-- <center> -->
+            Enter a value: <input id="number">
+            <br><br>
+            <button onclick="fact()">factorial</button>
+            <br><br>
+            <p id="rr">tt</p>
+        <script>
+            function fu(num){
+                if(num<=2)return num;
+                return fu(num-1)*num;
+            }
+            function fact(){
+                let a=document.getElementById("number").value;
+                let t=fu(a);
+                // document.write(t);
+                document.getElementById("rr").innerHTML=t;
+            }
+        </script>
+
+        <!-- </center> -->
+    </body>
+</html>

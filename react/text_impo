@@ -1,0 +1,6 @@
+if a data is exported by defaultly form any other mjs file then that can be accessible by any variable name
+but in the case of non custom data exported by any  other mjs file then that can be accessible by the name they have been sent by any exported file
+
+
+
+variable passed to any components can be assessed using props.variablename 

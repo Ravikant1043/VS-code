@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int n,m;
+    printf("Enter the size of first matrix");
+    scanf("%d%d",&n,&m);
+    int p,o;
+    printf("Enter the size of second matrix");
+    scanf("%d%d",&p,&o);
+    if(m!=p)
+    {
+        
+    }
+}

@@ -1,0 +1,32 @@
+#name-from{
+    height: 100vh;
+}
+#ravi{
+    top: 400px;
+    width: 2px solid black ;
+    height: 10px;
+
+}
+/* #login{
+    left: 453.71px; 
+    top: 429px; 
+    position: relative; 
+    border-radius: 25px;
+    height: 30px; 
+    width: 90px; 
+    background-color: black; 
+    color: white;
+}
+#login:hover{
+    left: 453.71px; 
+    top: 429px; 
+    position: absolute; 
+    border-radius: 25px;
+    height: 30px; 
+    width: 90px; 
+    background-color: black; 
+    color: white;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+} */

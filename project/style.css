@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    cursor: url(https://cdn.custom-cursor.com/db/cursor/32/colourful_cursor.png),
+    default !important;
+    position: relative;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color: hwb(231 34% 50%);
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+.prototype{
+    margin: 100px 200px;
+    text-decoration: none;
+    color: antiquewhite;
+    text-shadow: 10px;
+    
+    position: relative;
+}
+.prototype::after{
+    position: absolute;
+    transform: translateY(0);
+    cursor: pointer;
+}
+.prototype::after:hover{
+   
+    /* transform: scaleY(5); */
+    transform: translateY(5);
+}

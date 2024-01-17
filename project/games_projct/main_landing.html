@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Tail Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Miniver&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <div style="text-align: end; margin-right:40px;">
+        <P id="lang">Select Your Language</P>
+        <select style="background-color: grey;" id="select1">
+            <option value="English">English</option>
+            <option value="Hindi" >Hindi</option>
+            <option value="Telugu" >Telugu</option>
+            <option value="Bhojpuri" >Bhojpuri</option>
+          </select>
+        <button onclick="getOption()"><img src="check2.jpg" class="image" ></button>
+    </div>
+    <br>
+    <hr style="margin: 0px 60px; border-radius: 200%;">
+<br>
+<h1 id="play">Wanna play Games</h1>
+
+<div class="row">
+    <div class="left">
+        <br>
+        
+        <p id="select">Select the game you wanna play </p>
+    </div>
+    <div class="right">
+        <a href="newsudoku.html"><input type="button" value="Suduko" class="tp"></a>
+        <br><br>
+        <a href="ticindex.html"><button class="tp">Tic-Tac-Toe</button></a>
+    </div>
+
+</div>
+<!-- <span class="output"></span> -->
+
+<br><br><br><br><br><br>
+<hr style="margin: 0px 60px; border-radius: 200%;">
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+    const cursor = document.createElement('div');
+    cursor.className = 'cursor';
+    document.body.appendChild(cursor);
+function startAnimation(e) {
+    cursor.style.animation = 'none';
+    cursor.style.left = e.clientX - cursor.offsetWidth / 2 + 'px';
+    cursor.style.top = e.clientY - cursor.offsetHeight / 2 + 'px';
+    setTimeout(() => {
+        cursor.style.animation = 'tailAnimation 2s ease-out';
+    }, 10);
+}
+
+    document.addEventListener('click', startAnimation);
+function moveCursor(e) {
+    cursor.style.left = e.clientX - cursor.offsetWidth / 2 + 'px';
+    cursor.style.top = e.clientY - cursor.offsetHeight / 2 + 'px';
+}
+
+document.addEventListener('mousemove', moveCursor);
+</script>
+</body>
+</html>

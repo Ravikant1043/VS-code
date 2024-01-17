@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Drawing Effect</title>
+    <style>
+        body {
+            background-color: #111;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #drawing-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="drawing-canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('drawing-canvas');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        ctx.strokeStyle = '#f39c12';
+        ctx.lineWidth = 2;
+
+        canvas.addEventListener('mousedown', (e) => {
+            isDrawing = true;
+            ctx.beginPath();
+            ctx.moveTo(e.clientX, e.clientY);
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (!isDrawing) return;
+            ctx.lineTo(e.clientX, e.clientY);
+            ctx.stroke();
+        });
+
+        canvas.addEventListener('mouseup', () => {
+            isDrawing = false;
+        });
+    </script>
+    <h1 style="color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed officia explicabo totam delectus ab optio error, autem repellendus fuga, sunt adipisci alias, exercitationem ipsum blanditiis excepturi voluptatum nihil aperiam. Aliquid.
+    Eveniet adipisci facilis, fugit mollitia possimus voluptas voluptatem aperiam, dignissimos nobis quod odit eum modi recusandae officia ea eligendi odio praesentium distinctio neque ratione. Earum quae non dolor fugit veniam?
+    Laudantium corrupti reiciendis earum laborum? Ad esse tenetur ut corporis quod corrupti culpa modi, praesentium harum magnam dolor distinctio architecto commodi vero possimus voluptatibus. Provident, similique ullam! Esse, eius expedita!
+    Provident facilis, rerum voluptates quo eius corrupti aut iure fuga consectetur esse optio debitis ducimus a unde magnam voluptatem nulla, veniam asperiores consequatur sed amet? Voluptatem sed sunt pariatur corrupti.
+    Recusandae fugiat, praesentium porro architecto sapiente illo veniam animi rem. Voluptatum ipsam adipisci doloremque officiis magnam, earum facilis? Doloremque fugiat quam magni sunt nesciunt inventore explicabo molestiae aliquam in assumenda?
+    Corrupti minus at ab modi! Delectus expedita repellat molestias odit inventore, dolorem numquam corporis neque temporibus maxime harum ab enim libero maiores! Eum odit dolorum exercitationem recusandae, cupiditate eius perferendis.
+    Iste exercitationem deleniti est obcaecati vitae? Sequi illo enim animi perspiciatis sit accusantium officiis delectus praesentium provident aperiam soluta, quam maiores tempore amet doloremque, ut, non tempora pariatur! Accusantium, possimus?
+    Aut doloremque, minima eaque ut nulla nemo facere nihil error repudiandae nobis quisquam totam enim delectus a cupiditate officia tempore tenetur, dolore in unde earum reprehenderit corrupti. Ratione, doloribus quo?
+    Laboriosam suscipit voluptas rerum veritatis sapiente recusandae necessitatibus minus possimus nemo voluptatibus, provident iure temporibus mollitia nobis aliquam maiores reiciendis accusamus quas repudiandae laudantium tenetur atque officia cupiditate? Neque, aliquam?
+    Debitis dolores quisquam quibusdam doloremque laboriosam adipisci aperiam a sunt quia! Nemo, dolores. Molestiae, quasi distinctio perferendis optio quia hic voluptas alias quibusdam officia tempore sapiente veritatis obcaecati! Accusantium, maiores?</h1>
+</body>
+</html>

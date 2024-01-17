@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        class MagicParticle{
+            constructor(x,y){
+                this.x=x;
+                this.y=y;
+                this.size=random(10,10);
+                this.baseColor=color(
+                    random([
+                    '#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080', '#ffffff', '#000000'
+                    ])
+                )
+                
+            }
+            update(){
+                this.x+=this.speedX;
+                this.y+=this.speedY;
+                this.opacity-=10;
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="home">
+        <h1 class="prototype"><span>I am a Prototype</span></h1>
+    </div>
+</body>
+</html> -->
+
+<!--                                                               -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor-Following Tail Animation</title>
+    <style>
+        body {
+            background-color: #222;
+            margin: 0;
+        }
+
+        .tail {
+            width: 20px;
+            height: 20px;
+            background-color: #f39c12;
+            border-radius: 50%;
+            position: absolute;
+            animation: tailAnimation 2s ease infinite;
+        }
+
+        @keyframes tailAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tail" id="tail"></div>
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const tail = document.getElementById('tail');
+            tail.style.left = (e.pageX - 10) + 'px';
+            tail.style.top = (e.pageY - 10) + 'px';
+        });
+    </script>
+</body>
+</html>  -->
+
+
+

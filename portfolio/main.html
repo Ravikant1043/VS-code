@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- to create icons we can go to the site called fontawesome.com  and get the script link and add it in your webpage -->
+    <!-- get the link and add it in your page 
+    ->create account->kits->get the link -->
+    <script src="https://kit.fontawesome.com/202102d9f6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="con">
+            <nav>
+                <img src="images/Untitled.jpg" class="logo">
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Competitive Programmer</p>
+                <h1>I'm Ravikant Sharma</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/image.jpg" style="height: 600px; width: 400px; border-radius: 20px;">
+                </div>
+                <div class="about-col2">
+                    <h1 class="hello">About Me</h1>
+                    <p>I am a enthuastic learner and want to learn something new everytime. Learning new things is like a steps for my glorious future.
+                    Everytime i try to focous on the things which can make me a better human and to my friends to.
+                I am a lovable friends to all and  </p>
+
+                    <div class="tabtitle">
+                        <p class="tablink active-link" onclick="opentab('skills')">Skils</p>
+                        <!-- <p class="tablink"onclick="opentab('experience')">Experience</p> -->
+                        <p class="tablink"onclick="opentab('education')">Education</p>
+                        <!-- <p class="tablink"></p> -->
+                    </div>
+                    <!-- skills -->
+                    <div class="tabcontent activetab" id="skills" >
+                        <ul><li><span>Coding Profile </span><br><a href="https://www.codechef.com/users/spyde10" target="_blank">3 star coder at Codechef </a><br>Newbie at Codeforces 
+                            <br><a href="https://leetcode.com/spyde_1/" target="_blank">Solved 400+ programs on Leetcode (with rating of 1516) </a><br><a href="https://auth.geeksforgeeks.org/user/ravikant1043/practice" target="_blank">300+ problems submitted on GFG</a></li></ul>
+                        <ul><li><span>Programming Languages</span><br><ul ><li>C++</li> <LI>PYTHON
+                        </LI> <LI>JAVA</LI>
+                    <LI>C</LI></ul></li></ul>
+                        <ul><li><span>CP </span><br>competitive programmer</li></ul>
+                        
+                    </div>
+                    <!-- experience  -->
+                    <div class="tabcontent" id="experience" style="margin-left: 90px;">
+                        <ul><li><span>CP </span><br>tt programmer</li></ul>
+                        <ul><li><span>CP </span><br>competitive programmer</li></ul>
+                        <ul><li><span>CP </span><br>competitive programmer</li></ul>
+                        
+                    </div>
+                    <!-- education  -->
+                    <div class="tabcontent" id="education" style="margin-left: 0px;">
+                        <ul><li><span>Graduation </span><br>Persuing my B.Tech from Aditya Engineering College</li></ul>
+                        <ul><li><span>Intermediate </span><br>From Sainik School Gopalganj in 2020 (Stream PCMBE)<br>with 88.8%</li></ul>
+                        <ul><li><span>Matricuation </span><br>From Sainik School Gopalganj in 2018 <br>with 84.2 %</li></ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="hello">Services</h1>
+            <div class="services-list">
+                <div>
+                    <!-- the link of the icons from fontawexome.com -->
+                    <!-- <i class="fa-light fa-square-code fa-beat-fade"></i> -->
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Competitive Programmer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, minus. Labore tenetur nostrum ipsum dolores sit ut sequi accusantium impedit quos cupiditate? Adipisci architecto voluptatibus natus exercitationem, esse reiciendis autem.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <!-- <i class="fa-solid fa-binary-lock fa-bounce"></i> -->
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>hello Programmer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, minus. Labore tenetur nostrum ipsum dolores sit ut sequi accusantium impedit quos cupiditate? Adipisci architecto voluptatibus natus exercitationem, esse reiciendis autem.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>hi Programmer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, minus. Labore tenetur nostrum ipsum dolores sit ut sequi accusantium impedit quos cupiditate? Adipisci architecto voluptatibus natus exercitationem, esse reiciendis autem.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="hello">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/im.jpg" >
+                    <!-- style="height:400px;width: 300px;"> -->
+                    <div class="layer">
+                        <h3>apps</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quaerat, nam quod praesentium tempora dolorum obcaecati beatae! </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/iim.jpg" >
+                    <!-- style="height:400px;width: 300px;"> -->
+                    <div class="layer">
+                        <h3>oops</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quaerat, nam quod praesentium tempora dolorum obcaecati beatae! </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image.jpg" >
+                    <!-- style="height:400px;width: 300px;"> -->
+                    <div class="layer">
+                        <h3>hello</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quaerat, nam quod praesentium tempora dolorum obcaecati beatae! </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>                
+            </div>
+            <a href="#" class="button">See More</a>
+        </div>
+
+        
+    </div>
+
+
+    <!-- ----------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="hello">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> rbkantsharma@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7808255687</p>
+                    <div class="social-media">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-github"></i></i></a>
+                    </div>
+                    <a href="images/im.jpg" download class="cv">Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter your mail" required>
+                        <textarea name="message" placeholder="Enter your message" rows="6"></textarea>
+                        <button type="submit" class="cv sub">Submit</button>
+                    </form>
+                </div>
+                <!-- in href add the link of the file which you want to download  and add download keyword-->
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Ravikant Sharma</p>
+        </div>
+    </div>
+
+    <script>
+        var t=document.getElementsByClassName("tablink");
+        var tt=document.getElementsByClassName("tabcontent");
+
+        function opentab(tabname){
+            for(p of t){
+                p.classList.remove("active-link");
+            }
+            for(p of tt){
+                p.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("activetab");
+        }
+    </script>
+    <script>
+        var sm=document.getElementById("menu");
+        function openmenu(){
+            sm.style.right = "0px";
+        }
+        function closemenu(){
+            sm.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

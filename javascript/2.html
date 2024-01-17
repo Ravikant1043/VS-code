@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            hlw guys
+        </title>
+    </head>
+    <body style="text-align: center;">
+
+        Enter a value: <input id="number">
+        <br><br>
+        <button onclick="fact()">Factorial</button>
+        <br><br>
+        <p id="ra"></p>
+        <!-- <script type="text/javascript" src="ravi.js"> -->
+            <!-- // let t=" Tejaswi betichod hai  ";
+            // document.write(t.trim()); -->
+
+        </script>
+        <script>
+            function fu(num){
+                if(num<=2)return num;
+                return fu(num-1)*num;
+            }
+            function fact(){
+            let t=document.getElementById("number").value;
+            let k=fu(t);
+            document.getElementsByTagName("p")[0].innerHTML="The factorial of "+t+" is "+k;
+            }
+            // let t=" Tejaswi betichod hai  ";
+            // document.write(t+"<br>");
+            // document.write(t.trim()+"<br>");
+            // document.write(t.length);
+            // let t=["ravi","rahul"];
+            // t.unshift("kant");
+            // document.write(t.join('-')+"<br>");
+            // window.print();
+            // document.write(t);
+            // document.write(t.join(""));
+            // let d=new Date();
+            // document.write(d.toString()+"<hr>");
+            // document.write(d.getSeconds());
+
+            // let a=parseInt(prompt("Enter the value of a"));
+            // document.write("<br>"+a);
+            // let b=window.prompt("Enter the value of b");
+            // document.write("<br>"+(a+parseInt(b)));
+
+            // co 
+            // let t=Math.log10(12809)
+            // t=Math.round(t);
+            // document.write(t+1);
+
+            // let a=parseInt(prompt("Enter the value"));
+
+            // let t=Math.trunc(Math.log10(a))+1;
+            // document.write(t);
+            // let ans=0;
+            // while(a>0){
+            //     let k=a%10;
+            //     a=parseInt(a/10);
+            //     document.write(ans);
+            //     ans=ans+Math.trunc(Math.pow(k,t));
+            // }
+            // document.write("<br>"+ans);
+
+            // Enter a number :<input 
+            // <input type="text" id="ravi">Enter the value</input>
+        </script>
+        <form >
+            <button onclick="func()">hlw</button>
+        </form>
+    </body>
+</html>

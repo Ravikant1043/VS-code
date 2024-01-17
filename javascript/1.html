@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>mai hu apka pappa</title>
+    </head>
+    <body>
+        <p>Ravikant</p>
+        <p>Rohan</p>
+        <p id="dd"></p>
+        <script>
+            function f(){
+                // var a=prompt("rohan madharchod hai");
+                // document.write(a);
+                // confirm("rr");
+                // document.open();
+                // document.write("kaise h beta");
+                window.print();
+                // document.close();
+            }
+            
+            function getFocus(){
+                document.getElementById("myt").focus();
+            }
+            function bhag(){
+                document.getElementById("myt").blur();
+            }
+            let ur=document.URL;
+            let ac=document.readyState;
+            // document.getElementsByName("Ravikant").innerHTML=ac;
+            document.getElementsByTagName("p")[0].innerHTML=ac;
+            document.getElementsByTagName("p")[1].innerHTML=document.title;
+            document.open();
+            document.write("Ra");
+            // document.getElementsByName("Rohan").innerHTML="tt";
+            document.getElementById("dd").innerHTML="Rahul";
+            // alert()
+            // <br>
+            document.write("<br>Rks");
+            // f();
+            document.close();
+            </script>
+            <button onclick="f()">print krna hoga to acche se dabana warna gand mra mc</button>
+            <br>
+            <input type="text" id="myt" value="value dal na">
+            <button type="button" onclick="getFocus()">hello</button>
+            <button type="button" onclick="lose()">bhag</button>
+            
+    </body>
+
+</html>

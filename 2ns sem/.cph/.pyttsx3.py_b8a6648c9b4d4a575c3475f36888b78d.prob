@@ -1,0 +1,1 @@
+{"name":"Local: pyttsx3","url":"d:\\VS code\\2ns sem\\pyttsx3.py","tests":[{"id":1677395733985,"input":"3\n1\n2\n1000000000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VS code\\2ns sem\\pyttsx3.py","group":"local","local":true}
